@@ -1,0 +1,47 @@
+@import '../../../styles/global.scss';
+
+.features {
+  padding: 48px 0;
+
+  &_title {
+    margin-bottom: 72px;
+    font-size: 2.7rem;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+  }
+
+  &Grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+
+    &Feature {
+      padding: 48px 32px 56px;
+      border-radius: 8px;
+      background-color: $color-4;
+
+      &_icon {
+        width: 32px;
+        height: 32px;
+        margin-bottom: 1rem;
+      }
+
+      &_title {
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 700;
+      }
+
+      &_description {
+        line-height: 22px;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #c2c3c5;
+        font-family: 'Inter', sans-serif;
+      }
+    }
+  }
+}
